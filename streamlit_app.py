@@ -12,7 +12,7 @@ def add_prompt_enhancer_sidebar(openai_api_key):
     
     with st.sidebar:
         st.title("🔮 Prompt Enhancer")
-        st.write("Improve your prompts through a guided conversation with an AI assistant.")
+        st.write("Improve your prompts through a guided conversation with OpenAI o4-mini assistant.")
         
         # Initialize conversation state if not already done
         if "enhancer_messages" not in st.session_state:
@@ -159,7 +159,7 @@ if "user_prompt" not in st.session_state:
     st.session_state.user_prompt = ""
 
 # Show title and description
-st.title("🎨GenRock")
+st.image("logo.png", width=400)
 st.write(
     "Generate images using OpenAI's DALL-E models. "
     "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys)."
